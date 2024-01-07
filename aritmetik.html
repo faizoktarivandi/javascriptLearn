@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=en>
+     <head>
+        <title>JS Aritmetik</title>
+     </head>
+     <body>
+        <h1>Hasil Penjumlahan Variable</h1>
+        <p id="hasilPenjumlahan"></p>
+        <p id="pesan"></p>
+      
+        <script>
+            let angkaPertama = 10;
+            let teksKedua = "saya belajar javascript";
+            let angkaKetiga = 15;
+      
+            let hasilPenjumlahan = angkaPertama + teksKedua;
+      
+            let pesan = ""
+            if (isNaN(hasilPenjumlahan)) {
+            pesan = "Terjadi kesalahan : Variabel pertama dan kedua tidak dapat dijumlahkan. Hasil diatas adalah hasil penjumlahan variabel pertama dan ketiga!";
+            hasilPenjumlahan = angkaPertama + angkaKetiga;
+          }
+      
+          document.getElementById("pesan").innerText = pesan;
+          document.getElementById("hasilPenjumlahan").innerText = "Hasil penjumlahan: " + hasilPenjumlahan;
+        </script>
+      </body>
+</html>

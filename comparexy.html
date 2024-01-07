@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Membandingkan Nilai X dan Y</title>
+</head>
+<body>
+  <h3>Membandingkan Nilai X dan Y</h3>
+  <label for="nilaiX">Masukkan nilai X:</label>
+  <input type="number" id="nilaiX"><br><br>
+  <label for="nilaiY">Masukkan nilai Y:</label>
+  <input type="number" id="nilaiY"><br><br>
+  <button onclick="bandingkanNilai()">Compare!</button>
+
+  <script>
+    function bandingkanNilai() {
+      var nilaiX = parseInt(document.getElementById("nilaiX").value);
+      var nilaiY = parseInt(document.getElementById("nilaiY").value);
+
+      if (nilaiX > nilaiY) {
+        alert("HORE SAYA BERHASIL");
+      } else if (nilaiX === nilaiY) {
+        alert("NILAINYA SAMA TUH");
+      } else {
+        alert("NILAI Y LEBIH GEDE");
+      }
+    }
+  </script>
+</body>
+</html>
